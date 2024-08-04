@@ -4,9 +4,9 @@ Minimal setup needed to protect a resource with username / password combo.
 
 ## About
 
-The simplest for of access protection is basic authentication.
-When a protected resource is accessed, the server verifies if the client is athenticated. If not, the request is intercepted and client is forwarded to a login page instead.
-Upon correct entry of credentials, the client is then again realyed to the original protected resource.
+The simplest for of access protection is [basic authentication](https://datatracker.ietf.org/doc/html/rfc7617).
+When a protected resource is accessed, the server verifies if the client is authenticated. If not, the request is intercepted and client is forwarded to a login page instead.
+Upon correct entry of credentials, the client is then relayed to the original protected resource.
 
 This respository contains a spring-boot/spring-security for just that:
  * Protected resource at [http://127.0.0.1:8081/dummyresource](http://127.0.0.1:8081/dummyresource)
@@ -68,5 +68,6 @@ Logic to be called by a "login" button, to trigger authentication dance. See: [h
 
  * Based on [this tutorial](https://sabljakovich.medium.com/minimalistic-basic-auth-configuration-with-spring-boot-security-8a31a5d958d2).
  * Changes by  [m5c](https://github.com/m5c)
-    * An actual code repo + documentation
-    * CORS support, to enable testing from JS / Browsers
+    * Code repo + documentation
+    * Maven configuration tweaks
+    * JS Client sample code + CORS support on server side

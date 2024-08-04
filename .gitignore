@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/intellij,maven,java,macos,vim,emacs,visualstudiocode,gradle
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij,maven,java,macos,vim,emacs,visualstudiocode,gradle
 
+### intellij
+.idea
+
 ### Emacs ###
 # -*- mode: gitignore; -*-
 *~
